@@ -9,4 +9,7 @@
 /backend/!**/src/test/**/target/
 
 #Frontend
-/frontend
+/frontend/node_modules
+/frontend/dist
+/frontend/dist-ssr
+/frontend/*.local
