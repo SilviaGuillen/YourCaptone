@@ -4,20 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64738811-bbc8-4c7a-aafc-6e631eda171c" name="Changes" comment="update2">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/build-backend.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/build-frontend.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="64738811-bbc8-4c7a-aafc-6e631eda171c" name="Changes" comment="building java classes">
+      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/example/backend/controller/FreeTimeControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/example/backend/service/FreeTimeServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/HeaderBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/UserBar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/UserBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/controller/FreeTimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/controller/FreeTimeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/model/Freetime.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/model/Freetime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/repository/FreeTimeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/repository/FreeTimeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/service/FreeTimeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/service/FreeTimeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/service/IdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/service/IdGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubProjectSettings">
@@ -49,21 +72,45 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.BackendApplication.executor": "Run",
-    "git-widget-placeholder": "master",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "git-widget-placeholder": "javaclasscreation",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/silviags/IdeaProjects/YourCaptone/backend/src/test",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
     "ts.external.directory.path": "/Users/silviags/IdeaProjects/YourCaptone/frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/src/test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.idea" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.backend.service" />
+      <recent name="com.example.backend.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BackendApplication">
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="DB_URI" value="mongodb+srv://Malumabb:k3ca4DzEjddwivY0@cluster0.qstuwku.mongodb.net/Timeapp" />
+      </envs>
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.backend.BackendApplication" />
@@ -71,6 +118,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.build" />
+      <item itemvalue="Spring Boot.BackendApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -87,7 +153,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714984669610</updated>
-      <workItem from="1714984670634" duration="9003000" />
+      <workItem from="1714984670634" duration="30605000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -113,7 +179,31 @@
       <option name="project" value="LOCAL" />
       <updated>1714985969615</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="gitignore update">
+      <option name="closed" value="true" />
+      <created>1715077311874</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715077311874</updated>
+    </task>
+    <task id="LOCAL-00005" summary="gitignore update">
+      <option name="closed" value="true" />
+      <created>1715077321246</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715077321246</updated>
+    </task>
+    <task id="LOCAL-00006" summary="building java classes">
+      <option name="closed" value="true" />
+      <created>1715081934715</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715081934715</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +223,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="update2" />
-    <option name="LAST_COMMIT_MESSAGE" value="update2" />
+    <MESSAGE value="gitignore update" />
+    <MESSAGE value="building java classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="building java classes" />
   </component>
 </project>
