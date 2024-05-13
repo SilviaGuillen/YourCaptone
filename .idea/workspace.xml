@@ -4,19 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64738811-bbc8-4c7a-aafc-6e631eda171c" name="Changes" comment="building java classes">
-      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/example/backend/controller/FreeTimeControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/example/backend/service/FreeTimeServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/HeaderBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/UserBar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/UserBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/style.css" afterDir="false" />
+    <list default="true" id="64738811-bbc8-4c7a-aafc-6e631eda171c" name="Changes" comment="frontend header">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/AddNewFreeTimeActivity.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/AddNewFreetimeActivity.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/EditFreetimeCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/EditFreetimeCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Filter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/FreetimeCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/FreetimeCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Navi.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Navi.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/freetimePage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/welcomePage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/types/Freetime.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/controller/FreeTimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/controller/FreeTimeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/model/Freetime.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/model/Freetime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/repository/FreeTimeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/repository/FreeTimeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/service/FreeTimeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/service/FreeTimeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/service/IdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/service/IdGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="javaclasscreation" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,10 +81,10 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
-    "git-widget-placeholder": "javaclasscreation",
+    "git-widget-placeholder": "pages",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/silviags/IdeaProjects/YourCaptone/backend/src/test",
+    "last_opened_file_path": "/Users/silviags/IdeaProjects/YourCaptone/backend/src/assets",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -93,6 +99,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/src/assets" />
+      <recent name="$PROJECT_DIR$/backend/src" />
       <recent name="$PROJECT_DIR$/backend/src/test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -106,7 +114,7 @@
       <recent name="com.example.backend.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BackendApplication">
+  <component name="RunManager" selected="npm.build">
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
         <env name="DB_URI" value="mongodb+srv://Malumabb:k3ca4DzEjddwivY0@cluster0.qstuwku.mongodb.net/Timeapp" />
@@ -153,7 +161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714984669610</updated>
-      <workItem from="1714984670634" duration="30605000" />
+      <workItem from="1714984670634" duration="39789000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -203,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715081934715</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="frontend header">
+      <option name="closed" value="true" />
+      <created>1715607139884</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715607139884</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +241,7 @@
     <MESSAGE value="update2" />
     <MESSAGE value="gitignore update" />
     <MESSAGE value="building java classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="building java classes" />
+    <MESSAGE value="frontend header" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend header" />
   </component>
 </project>
