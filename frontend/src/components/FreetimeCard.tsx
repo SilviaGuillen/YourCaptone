@@ -29,15 +29,18 @@ export default function FreetimeCard({ freetime }: FreetimeProps) {
         <li className="freetime-card">
             <div className="freetime-card">
                 <div className="freetime-content">
-                    <h3 className="freetime-category">Freetime ID: <span
-                        className="larger-text">{freetime.id}</span></h3>
+                    <h3 className="freetime-id">Freetime ID: <span
+                        className="smaller-text">{freetime.id}</span></h3>
                     <p className="freetime-name larger-text">{freetime.freetimeName}</p>
+                    <p className="freetime-date larger-text">{freetime.freetimeDate}</p>
+                    <p className="freetime-hours larger-text">{freetime.freetimeHours}</p>
                     <p className="freetime-category larger-text">Category: <br/> <span
                         className="smaller-text">{freetime.category}</span></p>
                     <p className="freetime-modus larger-text">Modus: <br/> <span
                         className="smaller-text">{freetime.modus}</span></p>
-                    <button onClick={handleDelete} className="larger-text">Delete</button>
-                    <button onClick={handleEdit} className="larger-text">Edit <Link to={"edit/" + freetime.modus}>Here</Link> </button>
+                    <button onClick={handleDelete} className="boton">Delete</button>
+                    <button onClick={handleEdit} className="boton2">Edit <Link
+                        to={"edit/" }>Here</Link></button>
 
                 </div>
             </div>

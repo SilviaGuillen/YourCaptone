@@ -31,6 +31,7 @@ class FreeTimeControllerTest {
     @Test
     void getAllFreeTime() {
         List<Freetime> freetimes = List.of(
+                new Freetime("id0", "time with mama", "Muttertag", "all day", FreetimeCategory.NONE, FreetimeModus.NONE),
                 new Freetime("id1", "time with mama", "Muttertag", "all day", FreetimeCategory.FAMILY, FreetimeModus.IN_PERSON),
                 new Freetime("id2", "chef meeting", "Mondays", "11 AM", FreetimeCategory.JOB, FreetimeModus.PHONE),
                 new Freetime("id3", "Oskar's Birthday", "17.07.24", "from 5 to 10pm", FreetimeCategory.FRIENDS, FreetimeModus.VIDEO)

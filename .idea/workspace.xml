@@ -4,25 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64738811-bbc8-4c7a-aafc-6e631eda171c" name="Changes" comment="frontend header">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/AddNewFreeTimeActivity.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/AddNewFreetimeActivity.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/EditFreetimeCard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/EditFreetimeCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Filter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/FreetimeCard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/FreetimeCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Navi.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Navi.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/freetimePage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/welcomePage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/types/Freetime.tsx" afterDir="false" />
+    <list default="true" id="64738811-bbc8-4c7a-aafc-6e631eda171c" name="Changes" comment="frontend pages">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/model/FreetimeCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/model/FreetimeCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/model/FreetimeModus.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/model/FreetimeModus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/example/backend/controller/FreeTimeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/example/backend/controller/FreeTimeControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/AddNewFreeTimeActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AddNewFreeTimeActivity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/AddNewFreetimeActivity.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AddNewFreetimeActivity.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/EditFreetimeCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/EditFreetimeCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/EditFreetimeCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/EditFreetimeCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Filter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Filter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/FreetimeCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/FreetimeCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/FreetimeCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/FreetimeCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navi.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navi.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navi.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navi.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/UserBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/UserBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,13 +40,27 @@
         <option value="JUnit5 Test Class" />
         <option value="TypeScript JSX File" />
         <option value="CSS File" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="javaclasscreation" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,46 +75,47 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2g5PsAfSlkvTMgBzB6AbQuji1mu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.BackendApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
-    "git-widget-placeholder": "pages",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/silviags/IdeaProjects/YourCaptone/backend/src/assets",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "ts.external.directory.path": "/Users/silviags/IdeaProjects/YourCaptone/frontend/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BackendApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;calendar&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/silviags/IdeaProjects/YourCaptone/backend/src/main/resources&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/silviags/IdeaProjects/YourCaptone/frontend/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/src/main/resources" />
       <recent name="$PROJECT_DIR$/backend/src/assets" />
       <recent name="$PROJECT_DIR$/backend/src" />
       <recent name="$PROJECT_DIR$/backend/src/test" />
@@ -114,7 +131,7 @@
       <recent name="com.example.backend.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="Spring Boot.BackendApplication">
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
         <env name="DB_URI" value="mongodb+srv://Malumabb:k3ca4DzEjddwivY0@cluster0.qstuwku.mongodb.net/Timeapp" />
@@ -143,6 +160,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +179,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714984669610</updated>
-      <workItem from="1714984670634" duration="39789000" />
+      <workItem from="1714984670634" duration="40815000" />
+      <workItem from="1715617307372" duration="6114000" />
+      <workItem from="1715675751462" duration="1475000" />
+      <workItem from="1715678000464" duration="8490000" />
+      <workItem from="1715690182450" duration="356000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -219,7 +241,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715607139884</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="frontend pages">
+      <option name="closed" value="true" />
+      <created>1715616570747</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715616570747</updated>
+    </task>
+    <task id="LOCAL-00009" summary="frontend pages">
+      <option name="closed" value="true" />
+      <created>1715616617142</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715616617142</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +268,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -242,6 +292,7 @@
     <MESSAGE value="gitignore update" />
     <MESSAGE value="building java classes" />
     <MESSAGE value="frontend header" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend header" />
+    <MESSAGE value="frontend pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend pages" />
   </component>
 </project>

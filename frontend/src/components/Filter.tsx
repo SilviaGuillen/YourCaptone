@@ -45,9 +45,9 @@ export function Filter(props: FilterProps) {
         <div className="filter-items">
             <input className="filter-input" type="search" placeholder="Search" onChange={handleOnChangeInput} value={filterText}/>
             <select className="filter-category-select" onChange={handleOnSelectChange} value={filterCategory}>
-                <option value="freetimeId">ProductId</option>
+                <option value="freetimeId">Id</option>
                 <option value="name">Name</option>
-                <option value="category">Kategorie</option>
+                <option value="category">Category</option>
                 <option value="modus">Modus</option>
             </select>
         </div>

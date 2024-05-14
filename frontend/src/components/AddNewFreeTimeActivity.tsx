@@ -52,16 +52,29 @@ const AddNewFreetimeActivity: React.FC = () => {
     return (
         <form onSubmit={handleSubmit} className="add-freetime-form">
             <label className="form-label">
-                Product ID:
-                <input type="text" name="freetimeId" value={formData.id} onChange={handleChange} className="form-input" required />
+                ID:
+                <input type="text" name="id" value={formData.id} onChange={handleChange} className="form-input"
+                       required/>
             </label>
             <label className="form-label">
-                Name:
-                <input type="text" name="freetimeName" value={formData.freetimeName} onChange={handleChange} className="form-input" required />
+                FreeTimeName:
+                <input type="text" name="freetimeName" value={formData.freetimeName} onChange={handleChange}
+                       className="form-input" required/>
+            </label>
+            <label className="form-label">
+                FreeTimeDate:
+                <input type="text" name="freetimeDate" value={formData.freetimeDate} onChange={handleChange}
+                       className="form-input" required/>
+            </label>
+            <label className="form-label">
+                FreeTimeHours:
+                <input type="text" name="freetimeHours" value={formData.freetimeHours} onChange={handleChange}
+                       className="form-input" required/>
             </label>
             <label className="form-label">
                 Category:
-                <select name="category" value={formData.category} onChange={handleChange} className="form-select" required>
+                <select name="category" value={formData.category} onChange={handleChange} className="form-select"
+                        required>
                     {Object.keys(FreetimeCategory)
                         .filter((key) => isNaN(Number(FreetimeCategory[key as keyof typeof FreetimeCategory])))
                         .map((key) => (
@@ -72,8 +85,19 @@ const AddNewFreetimeActivity: React.FC = () => {
                 </select>
             </label>
             <label className="form-label">
-                Quantity:
-                <input type="string" name="ActivityModus" value={formData.modus} onChange={handleChange} className="form-input" required />
+                Modus:
+                <select name="modus" value={formData.modus} onChange={handleChange} className="form-select"
+                        required>
+                    {Object.keys(FreetimeModus)
+                        .filter((key) => isNaN(Number(FreetimeModus[key as keyof typeof FreetimeModus])))
+                        .map((key) => (
+                            <option key={key} value={FreetimeModus[key as keyof typeof FreetimeModus]}>
+                                {FreetimeModus[key as keyof typeof FreetimeModus]}
+                            </option>
+                        ))}
+                </select>
+
+
             </label>
             <button type="submit" className="form-button">Add FreetimeActivity</button>
             {successMessage && <div className="success-message">{successMessage}</div>}

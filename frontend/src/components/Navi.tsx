@@ -11,16 +11,16 @@ export function Navi(props: NaviProps): JSX.Element {
 
     return <nav className="navbar">
         <div>
-            <Link to={"/"} className="navbar-title">Warehouse System</Link>
+            <Link to={"/"} className="navbar-title">Free Time Match</Link>
         </div>
 
         <div>
             <ul className={"navbar-items"}>
                 <li className="nav-item">
-                    <NavLink to={"/"}>Freetimeliste</NavLink>
+                    <NavLink to={"/"}>Freetime List</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to={"/add"}>Freetime hinzufügen</NavLink>
+                    <NavLink to={"/add"}>Add New Freetime </NavLink>
                 </li>
                 <li className="nav-item filter-item">
                     <Filter filterFunction={props.filterCallback} />

@@ -5,6 +5,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: plum;
+    font-family: Chalkduster, fantasy;
 }
 
 .form-label {
@@ -27,7 +28,7 @@
 .form-button {
     width: 100%;
     padding: 10px 20px;
-    background-color: blue;
+    background-color: plum;
     color: white;
     border: none;
     border-radius: 5px;
@@ -36,5 +37,5 @@
 }
 
 .form-button:hover {
-    background-color: blue;
+    background-color: plum;
 }
