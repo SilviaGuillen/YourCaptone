@@ -8,12 +8,13 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #333333;
+    background-color: plum;
     color: white;
     position: sticky;
     top: 4.5rem;
     padding: 0 1rem;
     text-align: left;
+    font-family: Chalkduster, fantasy;
 }
 
 nav .navbar-title {

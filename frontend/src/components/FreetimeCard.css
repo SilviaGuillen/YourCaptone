@@ -1,40 +1,48 @@
-.edit-FreetimeCard {
-    width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.freetime-card {
     background-color: plum;
+    border-radius: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.1s ease-in-out;
+    width: 300px;
+    height: auto;
 }
 
-.form-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
+.freetime-card:hover {
+    transform: translateY(-1px);
 }
 
-.form-input,
-.form-select {
-    width: 100%;
+.freetime-content {
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
 }
 
-.form-button {
-    width: 100%;
-    padding: 10px 20px;
-    background-color: blue;
+.freetime-name,
+.freetime-category,
+.freetime-modus,
+button {
+    font-size: 1rem;
+}
+
+.larger-text {
+    font-size: 1.5rem;
+}
+
+.smaller-text {
+    font-size: 1.2rem;
     color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    font-style: italic;
 }
 
-.form-button:hover {
-    background-color: blue;
+.boton{
+    font-size: 1.2rem;
+    background-color: #242424;
+    border-radius: 60px;
+    color: white;
+}
+.boton2{
+    font-size: 1.2rem;
+    background-color: chartreuse;
+    border-radius: 60px;
+    color: black;
 }

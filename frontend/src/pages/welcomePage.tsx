@@ -14,11 +14,11 @@ export default function WelcomePage(props: WelcomePageProps) {
     const [freetimes, setFreetimes] = useState<Freetime[]>([]);
 
     useEffect(() => {
-        // Fetch all products when the component mounts
-        getAllFreetime();
+        // Fetch all freetimes when the component mounts
+        getAllFreetimes();
     }, []);
 
-    function getAllFreetime() {
+    function getAllFreetimes() {
         axios.get("/api/freetime/getAll").then(response => {
             setFreetimes(response.data);
         }).catch(error => {
@@ -33,7 +33,7 @@ export default function WelcomePage(props: WelcomePageProps) {
         const searchtext = props.filterValues.text.toLowerCase();
 
         switch (props.filterValues.category) {
-            case "freetimeId":
+            case "id":
                 return (freetime.id.toLowerCase().includes(searchtext));
             case "name":
                 return (freetime.freetimeName.toLowerCase().includes(searchtext));
@@ -43,7 +43,7 @@ export default function WelcomePage(props: WelcomePageProps) {
                 return (freetime.freetimeHours.toLowerCase().includes(searchtext));
             case "category":
                 return (freetime.category.toString().toLowerCase().includes(searchtext));
-            case "quantity":
+            case "modus":
                 return (freetime.modus.toString().toLowerCase().includes(searchtext));
         }
         return true;
@@ -55,7 +55,7 @@ export default function WelcomePage(props: WelcomePageProps) {
                 {freetimes
                     .filter(freetime => doFilter(freetime))
                     .map((freetime: Freetime) => (
-                        <FreetimeCard key={freetime.id} freetime={freetime} backToWelcomePage={false}/>
+                        <FreetimeCard key={freetime.id} freetime={freetime} />
                     ))}
             </ul>
         </>
