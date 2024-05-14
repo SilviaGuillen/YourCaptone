@@ -4,27 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64738811-bbc8-4c7a-aafc-6e631eda171c" name="Changes" comment="frontend pages">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="64738811-bbc8-4c7a-aafc-6e631eda171c" name="Changes" comment="add dockerfile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/model/FreetimeCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/model/FreetimeCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/model/FreetimeModus.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/model/FreetimeModus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/example/backend/controller/FreeTimeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/example/backend/controller/FreeTimeControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/AddNewFreeTimeActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AddNewFreeTimeActivity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/AddNewFreetimeActivity.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AddNewFreetimeActivity.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/EditFreetimeCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/EditFreetimeCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/controller/FreeTimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/controller/FreeTimeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/EditFreetimeCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/EditFreetimeCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Filter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Filter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/FreetimeCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/FreetimeCard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/FreetimeCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/FreetimeCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navi.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navi.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navi.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navi.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/UserBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/UserBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +57,9 @@
       </list>
     </option>
   </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -184,6 +172,8 @@
       <workItem from="1715675751462" duration="1475000" />
       <workItem from="1715678000464" duration="8490000" />
       <workItem from="1715690182450" duration="356000" />
+      <workItem from="1715690603094" duration="4807000" />
+      <workItem from="1715695708803" duration="1103000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -257,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715616617142</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add dockerfile">
+      <option name="closed" value="true" />
+      <created>1715694152768</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715694152768</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +291,7 @@
     <MESSAGE value="building java classes" />
     <MESSAGE value="frontend header" />
     <MESSAGE value="frontend pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend pages" />
+    <MESSAGE value="add dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dockerfile" />
   </component>
 </project>

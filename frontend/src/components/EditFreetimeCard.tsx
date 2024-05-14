@@ -1,7 +1,8 @@
 import {Freetime, FreetimeCategory, FreetimeModus} from "../types/Freetime.tsx";
 import axios from "axios";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./EditFreetimeCard.css";
+import {useParams} from "react-router-dom";
 
 const EditFreetimeCard: React.FC = () => {
 
@@ -16,6 +17,15 @@ const EditFreetimeCard: React.FC = () => {
 
     const [successMessage, setSuccessMessage] = useState<string>('');
 
+    const params = useParams()
+
+    useEffect(() => {
+        axios.get("/api/freetime/get/" + params.id).then(response => {
+            setEditData(response.data)
+        })
+    }, [params.id])
+
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
         setEditData({ ...editData, [name]: value });
@@ -24,7 +34,7 @@ const EditFreetimeCard: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            const response = await axios.put('/api/freetime/edit/?', editData,
+            const response = await axios.put('/api/freetime/edit/' + editData.id, editData,
                 {headers:{
                         'Content-Type': 'application/json'
                     }});
@@ -105,6 +115,7 @@ const EditFreetimeCard: React.FC = () => {
             <button type="submit" className="form-button">Save FreetimeCard
             </button>
             {successMessage && <div className="success-message">{successMessage}</div>}
+
         </form>
     );
 };

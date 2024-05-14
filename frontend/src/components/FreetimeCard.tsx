@@ -40,7 +40,7 @@ export default function FreetimeCard({ freetime }: FreetimeProps) {
                         className="smaller-text">{freetime.modus}</span></p>
                     <button onClick={handleDelete} className="boton">Delete</button>
                     <button onClick={handleEdit} className="boton2">Edit <Link
-                        to={"edit/" }>Here</Link></button>
+                        to={"edit/" +freetime.id }>Here</Link></button>
 
                 </div>
             </div>

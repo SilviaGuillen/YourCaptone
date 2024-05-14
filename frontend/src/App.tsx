@@ -58,7 +58,7 @@ function App() {
                 <Route path={"/"} element={<WelcomePage filterValues={appFilterValues}/>} />
                 <Route path={"freetime/:id"} element={<FreetimePage />} />
                 <Route path={"/add"} element={<AddNewFreetimeActivity/>} />
-                <Route path={"/edit"} element={<EditFreetimeCard/>}/>
+                <Route path={"/edit/:id"} element={<EditFreetimeCard/>}/>
 
             </Routes>
         </>
