@@ -25,8 +25,7 @@ const AddNewFreetimeActivity: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            const response = await axios.post('/api/freetime/add', formData, {
-                headers: {
+            const response = await axios.post('/api/freetime/add', formData, {headers: {
                     'Content-Type': 'application/json'
                 }
             });
