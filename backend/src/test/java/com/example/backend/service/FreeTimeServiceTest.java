@@ -2,9 +2,9 @@ package com.example.backend.service;
 
 import com.example.backend.model.Freetime;
 import com.example.backend.model.FreetimeCategory;
+import com.example.backend.model.FreetimeDto;
 import com.example.backend.model.FreetimeModus;
 import com.example.backend.repository.FreeTimeRepository;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -47,10 +47,11 @@ class FreeTimeServiceTest {
 
     @Test
     void createNewFreetime() {
-        Freetime freetime = new Freetime("id1","time with mama", "Muttertag", "all day", FreetimeCategory.FAMILY, FreetimeModus.IN_PERSON);
+
+        FreetimeDto freetime= new FreetimeDto("time with mama", "Muttertag", "all day", "Family", "in_person");
 
         Freetime actual = freeTimeService.createNewFreetime(freetime);
-        assertNotEquals(freetime.id(), actual.id());
+
         assertEquals(freetime.freetimeName(), actual.freetimeName());
         assertEquals(freetime.freetimeDate(), actual.freetimeDate());
         assertEquals(freetime.freetimeHours(), actual.freetimeHours());
@@ -74,13 +75,15 @@ class FreeTimeServiceTest {
 
     @Test
     void testUpdateFreetime() {
-        Freetime freetime = new Freetime("id1","time with mama", "Muttertag", "all day", FreetimeCategory.FAMILY, FreetimeModus.IN_PERSON);
-        when(mockFreetimeRepository.save(freetime)).thenReturn(freetime);
+        FreetimeDto freetime = new FreetimeDto("time with mama", "Muttertag", "all day", "FAMILY", "IN_PERSON");
+        Freetime freetime1 = new Freetime("1","time with mama", "Muttertag", "all day", FreetimeCategory.FAMILY,FreetimeModus.IN_PERSON);
+        when(mockFreetimeRepository.save(freetime1)).thenReturn(freetime1);
 
-        Freetime actual = freeTimeService.updateFreetime(freetime, freetime.id());
 
-        assertEquals(freetime, actual);
-        verify(mockFreetimeRepository, times(1)).save(freetime);
+        Freetime actual = freeTimeService.updateFreetime(freetime, "1");
+
+        assertEquals(freetime1, actual);
+        verify(mockFreetimeRepository, times(1)).save(freetime1);
     }
 
     @Test

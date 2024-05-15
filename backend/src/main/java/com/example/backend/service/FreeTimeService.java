@@ -2,6 +2,9 @@ package com.example.backend.service;
 
 
 import com.example.backend.model.Freetime;
+import com.example.backend.model.FreetimeCategory;
+import com.example.backend.model.FreetimeDto;
+import com.example.backend.model.FreetimeModus;
 import com.example.backend.repository.FreeTimeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -17,14 +20,14 @@ public class FreeTimeService {
 
     public List<Freetime> getAllFreetime(){return repo.findAll();}
 
-    public Freetime createNewFreetime(Freetime newFreetime) {
+    public Freetime createNewFreetime(FreetimeDto newFreetime) {
         Freetime freetime = new Freetime(
                 idGenerator.generateId(),
                 newFreetime.freetimeName(),
                 newFreetime.freetimeDate(),
                 newFreetime.freetimeHours(),
-                newFreetime.category(),
-                newFreetime.modus()
+                FreetimeCategory.valueOf(newFreetime.category().toUpperCase()),
+                FreetimeModus.valueOf(newFreetime.modus().toUpperCase())
 
         ); repo.save(freetime);
         return freetime;
@@ -35,8 +38,14 @@ public class FreeTimeService {
 
     }
 
-    public Freetime updateFreetime(Freetime freetime, String id) {
-        Freetime freetimeToUpdate = new Freetime(id, freetime.freetimeName(), freetime.freetimeDate(), freetime.freetimeHours(), freetime.category(),freetime.modus());
+    public Freetime updateFreetime(FreetimeDto freetime, String id) {
+        Freetime freetimeToUpdate = new Freetime(
+                id,
+                freetime.freetimeName(),
+                freetime.freetimeDate(),
+                freetime.freetimeHours(),
+                FreetimeCategory.valueOf(freetime.category().toUpperCase()),
+                FreetimeModus.valueOf(freetime.modus().toUpperCase()));
         return repo.save(freetimeToUpdate);
     }
 

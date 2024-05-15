@@ -2,6 +2,7 @@ package com.example.backend.controller;
 
 import com.example.backend.model.Freetime;
 import com.example.backend.model.FreetimeCategory;
+import com.example.backend.model.FreetimeDto;
 import com.example.backend.model.FreetimeModus;
 import com.example.backend.service.FreeTimeService;
 
@@ -53,26 +54,29 @@ class FreeTimeControllerTest {
 
     @Test
     void createNewFreeTime() {
-        Freetime freetime = new Freetime("id1", "time with mama", "Muttertag", "all day", FreetimeCategory.FAMILY, FreetimeModus.IN_PERSON);
-        when(mockFreeTimeService.createNewFreetime(freetime)).thenReturn(freetime);
+        FreetimeDto freetime = new FreetimeDto("time with mama", "Muttertag", "all day", "FAMILY", "IN_PERSON");
+        Freetime freetime1 = new Freetime("1","time with mama", "Muttertag", "all day", FreetimeCategory.FAMILY,FreetimeModus.IN_PERSON);
+
+        when(mockFreeTimeService.createNewFreetime(freetime)).thenReturn(freetime1);
 
         Freetime newFreetime = freeTimeController.createNewFreeTime(freetime);
 
-        assertEquals(freetime, newFreetime);
-        verify(mockFreeTimeService, times(1)).createNewFreetime(any(Freetime.class));
+        assertEquals(freetime1, newFreetime);
+        verify(mockFreeTimeService, times(1)).createNewFreetime(freetime);
 
 
     }
 
     @Test
     void updateFreeTime() {
-        Freetime freetime = new Freetime("id1", "time with mama", "Muttertag", "all day", FreetimeCategory.FAMILY, FreetimeModus.IN_PERSON);
-        when(mockFreeTimeService.updateFreetime(freetime, "id1")).thenReturn(freetime);
+        FreetimeDto freetime = new FreetimeDto("time with mama", "Muttertag", "all day", "FAMILY", "IN_PERSON");
+        Freetime freetime1 = new Freetime("1","time with mama", "Muttertag", "all day", FreetimeCategory.FAMILY,FreetimeModus.IN_PERSON);
+        when(mockFreeTimeService.updateFreetime(freetime, "id1")).thenReturn(freetime1);
 
         Freetime newFreetime = freeTimeController.updateFreeTime(freetime, "id1");
 
-        assertEquals(freetime, newFreetime);
-        verify(mockFreeTimeService, times(1)).updateFreetime(any(Freetime.class), anyString());
+        assertEquals(freetime1, newFreetime);
+        verify(mockFreeTimeService, times(1)).updateFreetime(freetime,"id1");
 
 
     }
