@@ -1,6 +1,7 @@
 package com.example.backend.controller;
 
 import com.example.backend.model.Freetime;
+import com.example.backend.model.FreetimeDto;
 import com.example.backend.service.FreeTimeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -23,10 +24,10 @@ public class  FreeTimeController {
     }
 
     @PostMapping("/add")
-    public Freetime createNewFreeTime(@RequestBody Freetime newFreetime) {return service.createNewFreetime(newFreetime);}
+    public Freetime createNewFreeTime(@RequestBody FreetimeDto newFreetime) {return service.createNewFreetime(newFreetime);}
 
     @PutMapping("/edit/{id}")
-    public Freetime updateFreeTime(@RequestBody Freetime freetime, @PathVariable String id) {return service.updateFreetime(freetime,id);}
+    public Freetime updateFreeTime(@RequestBody FreetimeDto freetime, @PathVariable String id) {return service.updateFreetime(freetime,id);}
 
     @DeleteMapping("/delete/{id}")
     public void  deleteFreeTime(@PathVariable String id) {

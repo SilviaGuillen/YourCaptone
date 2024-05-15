@@ -3,6 +3,7 @@ import axios from 'axios';
 import "./AddNewFreetimeActivity.css";
 import {Freetime, FreetimeCategory, FreetimeModus} from "../types/Freetime.tsx";
 
+
 const AddNewFreetimeActivity: React.FC = () => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 
@@ -25,7 +26,8 @@ const AddNewFreetimeActivity: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            const response = await axios.post('/api/freetime/add', formData, {headers: {
+            const response = await axios.post('/api/freetime/add' , formData, {
+                headers: {
                     'Content-Type': 'application/json'
                 }
             });
