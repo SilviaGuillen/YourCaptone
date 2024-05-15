@@ -55,8 +55,8 @@ class FreeTimeServiceTest {
         assertEquals(freetime.freetimeName(), actual.freetimeName());
         assertEquals(freetime.freetimeDate(), actual.freetimeDate());
         assertEquals(freetime.freetimeHours(), actual.freetimeHours());
-        assertEquals(freetime.category(), actual.category());
-        assertEquals(freetime.modus(), actual.modus());
+        assertEquals(freetime.category().toUpperCase(), actual.category().toString());
+        assertEquals(freetime.modus().toUpperCase(), actual.modus().toString());
         verify(mockFreetimeRepository, times(1)).save(actual);
 
 
