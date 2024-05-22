@@ -1,0 +1,18 @@
+.cuadro {
+    display: flex;
+
+    border-radius: 60px;
+    border-color: white;
+    border-style: solid;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: auto;
+    height: auto;
+
+
+
+}

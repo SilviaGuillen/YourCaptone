@@ -8,8 +8,10 @@
     align-items: center;
     padding: 0 1rem;
     padding-bottom: 0.5rem;
-    color: gray;
-    background-color: gold;
+    color: black;
+    font-family: Chalkduster, fantasy;
+    font-weight: bold;
+    background-color: lightgoldenrodyellow;
 }
 
 .button-login-logout {
