@@ -9,6 +9,8 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import AddNewFreetimeActivity from "./components/AddNewFreeTimeActivity.tsx";
 import EditFreetimeCard from "./components/EditFreetimeCard.tsx";
+import CalendarDemo from "./components/CalendarDemo.tsx";
+
 
 
 function App() {
@@ -50,6 +52,8 @@ function App() {
             })
     }
 
+
+
     return (
         <>
             <UserBar user={user} loginFunction={login} logoutFunction={logout} />
@@ -61,6 +65,7 @@ function App() {
                 <Route path={"/edit/:id"} element={<EditFreetimeCard/>}/>
 
             </Routes>
+            <CalendarDemo/>
         </>
     )
 }
