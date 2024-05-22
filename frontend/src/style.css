@@ -9,11 +9,13 @@
     --button-background: #444444;
     --button-background-active: chocolate;
     --button-border-hover: chocolate;
+
 }
 
 body {
     margin:0;
     padding:0;
+
 }
 
 .headerbar {
@@ -85,3 +87,4 @@ h1 {
 .recordtime-radiocontainer {
     margin: 1rem 0;
 }
+

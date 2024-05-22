@@ -1,6 +1,9 @@
-body, :root {
+html, :root {
   margin:0;
   padding:0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  background-color: gold;
+  background-image: url("./assets/landscape.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
