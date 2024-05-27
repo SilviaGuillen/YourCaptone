@@ -1,0 +1,32 @@
+
+#submit_login {
+    border: none;
+    background-color: plum;
+    width: 80%;
+    margin-top: 25px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login_main_container {
+    display: flex;
+    justify-content: center;
+}
+
+.login_list {
+    width: 300px;
+    border: #748E8F solid 1px;
+    border-radius: 10px;
+    box-shadow: #748E8F 1px 1px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.login_list_element {
+    display: flex;
+    flex-direction: column;
+}
