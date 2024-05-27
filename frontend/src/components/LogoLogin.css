@@ -45,6 +45,12 @@
     width: 30px;
     padding: 0.5px;
 }
+#logout_logo {
+    height: auto;
+    width: 30px;
+    padding: 0.5px;
+}
+
 
 #login_div:hover {
     cursor: pointer;
@@ -60,3 +66,35 @@
     text-decoration: none;
     color: #748E8F;
 }
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.dropdown-content {
+    margin-top: 30px;
+    display: none;
+    position: absolute;
+    padding: 10px 10px;
+    font-family: Arial;
+}
+
+.dropdown-content a {
+    padding: 10px 12px;
+    display: block;
+    color: black;
+    border-left: black 2px solid;
+}
+
+.dropdown-content a:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+

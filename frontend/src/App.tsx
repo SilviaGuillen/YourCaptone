@@ -19,6 +19,8 @@ import {Group} from "./model/Group.ts";
 import websiteLogo from "./assets/logo_mw_small.png";
 import loginLogo from "./assets/userLogo.png";
 
+import logoutlogo from "./assets/power-button.png";
+
 
 function App() {
 
@@ -100,6 +102,7 @@ function App() {
                         <p id={"headline"}>MyFreeTime</p>
                     </div>
 
+
                     <div className={"login_container"}>
 
                         <div>
@@ -111,15 +114,21 @@ function App() {
                         </div>
 
                         <div className={"dropdown"}>
-                            <button id={"login_div"} className={"dropbtn"} onClick={toProfile}>
+                            <button id={"login_div"} className={"dr"} onClick={toProfile}>
                                 <img id={"login_logo"} src={loginLogo}/>
                             </button>
-                            {(loggedInUser.userName !== "" || loggedInGroup.userName !== "") &&
-                                <div className={"dropdown-content"}>
-                                    <a>Profil</a>
-                                    <a>Nachrichten</a>
-                                    <a onClick={logout}>Logout</a>
-                                </div>
+                            {(loggedInUser.userName !== "" || loggedInGroup.userName !== "")
+                            }
+
+
+                        </div>
+
+                        <div className={"dropdown"}>
+                            <button id={"login_div"} className={"dr"} onClick={logout}>
+                                <img id={"logout_logo"} src={logoutlogo}/>
+                            </button>
+                            {(loggedInUser.userName !== "" || loggedInGroup.userName !== "")
+
                             }
                         </div>
 
