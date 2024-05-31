@@ -28,6 +28,7 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(request -> {
                     request.requestMatchers("/api/user/me").authenticated();
+                    request.requestMatchers("api/freetime/getAll").authenticated();
                     request.anyRequest().permitAll();
                 })
                 .sessionManagement(client -> client.sessionCreationPolicy(SessionCreationPolicy.ALWAYS))
